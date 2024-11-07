@@ -22,7 +22,8 @@ msci_eod_dl <- function(output = "INDEX_LEVELS",
                         end_dt = format(Sys.Date(), format = "%Y%m%d"), 
                         freq = "DAILY", 
                         basevalue = "false", 
-                        idx_code = 704866) {
+                        idx_code = 704866
+                       ) {
   
   # Transform the list of index id
   if (length(idx_code) > 1) {
