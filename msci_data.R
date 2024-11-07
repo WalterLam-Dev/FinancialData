@@ -67,7 +67,8 @@ msci_eod_dl <- function(output = "INDEX_LEVELS",
 # 2. Go to Developer (Ctrl + Shift + I) -> Network
 # 3. Click the "Download Data" button in the website
 # 4. Check the name of the new item after clicking the button 
-index_code = list(c(704866,704865,984000), 
+index_code = list(c(704866,704865,984000), # Cyclical, Defensive, All Strd
+                  c(984000,129858,139133,703025), # All Strd, EqWgt, MinVol, Mmt
                   704866)
 
 for (id in index_code) {
